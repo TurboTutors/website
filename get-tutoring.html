@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book a Free Tutoring Session — TurboTutors</title>
+  <meta name="description" content="Schedule a free one-on-one virtual tutoring session with TurboTutors. Available in math, science, computer science, English, and social studies." />
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <main id="main">
+
+    <div class="page-header-dark">
+      <div class="container">
+        <nav class="breadcrumb breadcrumb-dark" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span aria-hidden="true">/</span>
+          <span aria-current="page">Get Tutoring</span>
+        </nav>
+        <div class="hero-label">Free &middot; Virtual &middot; One-on-One</div>
+        <h1>Book a Free Tutoring Session</h1>
+        <p>Choose an available time below. During scheduling, tell us your course and what you'd like to cover so your tutor can prepare for the session.</p>
+      </div>
+    </div>
+
+    <section class="section" aria-labelledby="session-info-title">
+      <div class="container">
+
+        <div class="info-strip" aria-label="Session details">
+          <div class="info-strip-item">
+            <div class="info-strip-label">Cost</div>
+            <div class="info-strip-value">Free</div>
+          </div>
+          <div class="info-strip-item">
+            <div class="info-strip-label">Format</div>
+            <div class="info-strip-value">Virtual</div>
+          </div>
+          <div class="info-strip-item">
+            <div class="info-strip-label">Typical Session</div>
+            <div class="info-strip-value">60 minutes</div>
+          </div>
+          <div class="info-strip-item">
+            <div class="info-strip-label">Platform</div>
+            <div class="info-strip-value">Google Meet</div>
+          </div>
+        </div>
+
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;margin-bottom:3rem;">
+          <div>
+            <h2 id="session-info-title" style="font-family:var(--font-head);font-size:1.25rem;font-weight:700;margin-bottom:1rem;">Before Your Session</h2>
+            <p style="color:var(--text-2);font-size:0.9rem;margin-bottom:1.25rem;">For the most useful session possible, consider bringing:</p>
+            <ul style="display:flex;flex-direction:column;gap:0.625rem;">
+              <li style="display:flex;align-items:flex-start;gap:0.75rem;font-size:0.875rem;color:var(--text-2);">
+                <span style="color:var(--accent-dark);font-weight:700;margin-top:0.05rem;">&#10003;</span>
+                The topic or chapter you are studying
+              </li>
+              <li style="display:flex;align-items:flex-start;gap:0.75rem;font-size:0.875rem;color:var(--text-2);">
+                <span style="color:var(--accent-dark);font-weight:700;margin-top:0.05rem;">&#10003;</span>
+                Specific questions you are stuck on
+              </li>
+              <li style="display:flex;align-items:flex-start;gap:0.75rem;font-size:0.875rem;color:var(--text-2);">
+                <span style="color:var(--accent-dark);font-weight:700;margin-top:0.05rem;">&#10003;</span>
+                Relevant worksheets or practice problems
+              </li>
+              <li style="display:flex;align-items:flex-start;gap:0.75rem;font-size:0.875rem;color:var(--text-2);">
+                <span style="color:var(--accent-dark);font-weight:700;margin-top:0.05rem;">&#10003;</span>
+                Notes or review materials
+              </li>
+              <li style="display:flex;align-items:flex-start;gap:0.75rem;font-size:0.875rem;color:var(--text-2);">
+                <span style="color:var(--accent-dark);font-weight:700;margin-top:0.05rem;">&#10003;</span>
+                A goal for what you'd like to understand by the end
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2 style="font-family:var(--font-head);font-size:1.25rem;font-weight:700;margin-bottom:1rem;">Available Subjects</h2>
+            <div style="display:flex;flex-wrap:wrap;gap:0.5rem;">
+              <span class="pill-tag">Mathematics</span>
+              <span class="pill-tag">Physics</span>
+              <span class="pill-tag">Computer Science</span>
+              <span class="pill-tag">English</span>
+              <span class="pill-tag">Social Studies</span>
+              <span class="pill-neutral pill-tag">Algebra I &amp; II</span>
+              <span class="pill-neutral pill-tag">Geometry</span>
+              <span class="pill-neutral pill-tag">Precalculus</span>
+              <span class="pill-neutral pill-tag">Calculus</span>
+              <span class="pill-neutral pill-tag">Java</span>
+            </div>
+            <p style="color:var(--text-muted);font-size:0.78rem;margin-top:1rem;">
+              Don't see your course? Submit it when scheduling and we'll let you know if a tutor is available. <a href="subjects.html" style="color:var(--navy);font-weight:600;">View all subjects</a>
+            </p>
+          </div>
+        </div>
+
+        <h2 style="font-family:var(--font-head);font-size:1.25rem;font-weight:700;margin-bottom:1.25rem;">Select a Date &amp; Time</h2>
+        <div class="calendly-wrap" id="calendly-container">
+          <div
+            class="calendly-inline-widget"
+            data-url="https://calendly.com/turbotutors1/tutoring-session"
+            style="min-width:320px;height:680px;"
+            aria-label="TurboTutors scheduling widget">
+          </div>
+        </div>
+
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;margin-top:3rem;">
+          <div class="card">
+            <h3>After You Book</h3>
+            <p>You will receive scheduling confirmation and the Google Meet link for your session. If you need to reschedule, use the link included in your confirmation email.</p>
+          </div>
+          <div class="card">
+            <h3>Still Have Questions?</h3>
+            <p style="margin-bottom:1rem;">Email us and we will be happy to help you find the right tutoring support.</p>
+            <a href="mailto:turbotutors1@gmail.com" class="btn btn-dark" id="get-tutoring-email-btn" style="font-size:0.85rem;">turbotutors1@gmail.com</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section" style="background:var(--surface);border-top:1px solid var(--border);" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section-header center reveal">
+          <div class="section-label">Questions</div>
+          <h2 class="section-title" id="faq-title">Frequently Asked Questions</h2>
+        </div>
+
+        <div class="faq-list">
+
+          <div class="faq-item">
+            <button class="faq-q" id="faq-q1">
+              Is TurboTutors tutoring really free?
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-a" role="region" aria-labelledby="faq-q1">
+              <p>Yes. TurboTutors does not charge students for tutoring sessions. There are no fees, subscriptions, or hidden costs.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" id="faq-q2">
+              How long are sessions?
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-a" role="region" aria-labelledby="faq-q2">
+              <p>Most tutoring appointments are scheduled for approximately 60 minutes.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" id="faq-q3">
+              Where are sessions held?
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-a" role="region" aria-labelledby="faq-q3">
+              <p>Sessions are held virtually using Google Meet. You will receive the meeting link in your confirmation email after booking.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" id="faq-q4">
+              What should I bring?
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-a" role="region" aria-labelledby="faq-q4">
+              <p>Bring relevant notes, assignments, practice problems, review materials, or specific questions. Sharing what you want to cover when booking also helps your tutor prepare.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" id="faq-q5">
+              Can I book more than one session?
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-a" role="region" aria-labelledby="faq-q5">
+              <p>Yes. Students may schedule additional sessions based on tutor availability. There is no limit on how many times you can book.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" id="faq-q6">
+              Can I work with the same tutor again?
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-a" role="region" aria-labelledby="faq-q6">
+              <p>You may request a tutor you have previously worked with, although availability cannot always be guaranteed.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" id="faq-q7">
+              Who are the tutors?
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-a" role="region" aria-labelledby="faq-q7">
+              <p>TurboTutors is led by high-school students who provide tutoring in subjects they have studied and are comfortable teaching. Learn more on our <a href="team.html">Team page</a>.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" id="faq-q8">
+              Is TurboTutors a 501(c)(3)?
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-a" role="region" aria-labelledby="faq-q8">
+              <p>TurboTutors is fiscally sponsored by the Institute for Education, Research, and Scholarships (IFERS), a 501(c)(3) nonprofit organization. Charitable contributions are administered through IFERS.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" id="faq-q9">
+              How can I contact TurboTutors?
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-a" role="region" aria-labelledby="faq-q9">
+              <p>Email us at <a href="mailto:turbotutors1@gmail.com">turbotutors1@gmail.com</a> and we will be happy to help.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+  <script src="components.js" defer></script>
+</body>
+</html>
