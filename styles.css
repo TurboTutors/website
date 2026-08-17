@@ -206,7 +206,7 @@ header {
   box-shadow: var(--shadow-md);
 }
 .hero-single-frame img {
-  width: 100%; height: 380px; object-fit: cover;
+  width: 100%; height: auto;
   display: block;
 }
 .hero-image-caption {
