@@ -3,9 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Impact — TurboTutors Student Tutoring</title>
+  <title>Impact - TurboTutors Student Tutoring</title>
   <meta name="description" content="TurboTutors has supported 50+ students with 100+ hours of free virtual tutoring since 2024. See how we measure our impact." />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jsvectormap/dist/css/jsvectormap.min.css" />
+  <link rel="icon" type="image/png" href="logo-rounded.png" />
 </head>
 <body>
   <a href="#main" class="skip-link">Skip to content</a>
@@ -51,12 +53,17 @@
             <div style="font-family:var(--font-head);font-size:3rem;font-weight:900;color:var(--navy);line-height:1;" data-target="15" data-suffix="+">15+</div>
             <div style="font-size:0.85rem;color:var(--text-muted);margin-top:0.4rem;">Courses Covered</div>
           </div>
+          <div class="card" style="text-align:center;">
+            <div style="font-family:var(--font-head);font-size:3rem;font-weight:900;color:var(--navy);line-height:1;" data-target="20" data-suffix="+">20+</div>
+            <div style="font-size:0.85rem;color:var(--text-muted);margin-top:0.4rem;">Countries Reached</div>
+          </div>
         </div>
 
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;">
 
           <div>
-            <h3 style="font-family:var(--font-head);font-size:1rem;font-weight:700;margin-bottom:1.5rem;">Subject Distribution</h3>
+            <h3 style="font-family:var(--font-head);font-size:1rem;font-weight:700;margin-bottom:0.25rem;">Subject Distribution</h3>
+            <p style="font-size:0.75rem;color:var(--text-muted);margin-bottom:1.5rem;">As of August 2026</p>
 
             <div class="bar-row">
               <div class="bar-label-row">
@@ -97,7 +104,7 @@
 
           <div>
             <h3 style="font-family:var(--font-head);font-size:1rem;font-weight:700;margin-bottom:0.5rem;">Impact Since Founding</h3>
-            <p style="color:var(--text-muted);font-size:0.8rem;margin-bottom:1.5rem;">January 2024 &mdash; Present</p>
+            <p style="color:var(--text-muted);font-size:0.8rem;margin-bottom:1.5rem;">January 2024 - Present</p>
             <div class="timeline">
               <div class="timeline-item">
                 <div class="timeline-date">January 2024</div>
@@ -110,7 +117,7 @@
                 <p>TurboTutors begins holding virtual sessions, reaching its first cohort of students across mathematics, physics, and computer science.</p>
               </div>
               <div class="timeline-item">
-                <div class="timeline-date">2024&ndash;2025</div>
+                <div class="timeline-date">2024-2025</div>
                 <h4>Fiscal Sponsorship</h4>
                 <p>TurboTutors enters a fiscal sponsorship arrangement with IFERS, a 501(c)(3) nonprofit, supporting the organization's educational mission.</p>
               </div>
@@ -122,6 +129,19 @@
             </div>
           </div>
 
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="background:var(--bg-card);border-top:1px solid var(--border);" aria-labelledby="map-title">
+      <div class="container">
+        <div class="section-header center reveal">
+          <h2 class="section-title" id="map-title">Global Reach</h2>
+          <p class="section-sub">TurboTutors is proud to have supported students in the following countries around the world.</p>
+        </div>
+        
+        <div style="max-width:900px; margin:0 auto; border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; background: var(--surface);">
+          <div id="impact-map" style="width: 100%; height: 500px;"></div>
         </div>
       </div>
     </section>
@@ -190,5 +210,44 @@
   </main>
 
   <script src="components.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/jsvectormap"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jsvectormap/dist/maps/world.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      if (document.getElementById('impact-map')) {
+        const map = new jsVectorMap({
+          selector: '#impact-map',
+          map: 'world',
+          zoomOnScroll: false,
+          zoomButtons: true,
+          backgroundColor: 'transparent',
+          regionStyle: {
+            initial: {
+              fill: '#d1d9e0',
+              stroke: '#ffffff',
+              strokeWidth: 0.5,
+              fillOpacity: 1
+            },
+            hover: {
+              fillOpacity: 0.8,
+              cursor: 'pointer'
+            },
+            selected: {
+              fill: '#286583'
+            }
+          },
+          selectedRegions: ['US', 'CA', 'GB', 'IN', 'AU', 'DE', 'FR', 'AE', 'SG', 'JP', 'ET', 'MX', 'NG', 'PK', 'CN', 'ID', 'VN', 'BR', 'TR', 'BD', 'EG', 'DZ'],
+          onRegionTooltipShow(event, tooltip, code) {
+            const reachedCountries = ['US', 'CA', 'GB', 'IN', 'AU', 'DE', 'FR', 'AE', 'SG', 'JP', 'ET', 'MX', 'NG', 'PK', 'CN', 'ID', 'VN', 'BR', 'TR', 'BD', 'EG', 'DZ'];
+            if (!reachedCountries.includes(code)) {
+              event.preventDefault();
+            } else {
+              tooltip.text(tooltip.text() + " - Reached");
+            }
+          }
+        });
+      }
+    });
+  </script>
 </body>
 </html>

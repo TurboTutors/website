@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
   header.innerHTML = `
     <div class="nav-inner">
       <a href="index.html" class="logo" aria-label="TurboTutors Home">
-        <img src="logo-white.jpg" alt="TurboTutors" />
+        <img src="logo-rounded.png" alt="TurboTutors" />
         TurboTutors
       </a>
       <nav class="nav-links" aria-label="Primary navigation">
@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function () {
     <div class="footer-inner">
       <div class="footer-brand">
         <a href="index.html" class="logo" aria-label="TurboTutors Home">
-          <img src="logo-white.jpg" alt="TurboTutors" />
+          <img src="logo-rounded.png" alt="TurboTutors" />
           TurboTutors
         </a>
         <p>Free, personalized virtual tutoring. Student-led since January 2024.</p>
@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', function () {
       </div>
     </div>
     <div class="footer-bottom">
-      <span>&copy; <span id="copy-year"></span> TurboTutors. Established 2024 &bull; New Jersey.</span>
+      <span>&copy; <span id="copy-year"></span> TurboTutors. Established in January 2024 &bull; New Jersey.</span>
       <a href="mailto:turbotutors1@gmail.com">turbotutors1@gmail.com</a>
     </div>`;
   document.body.appendChild(footer);
