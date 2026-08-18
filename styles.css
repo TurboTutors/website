@@ -217,6 +217,8 @@ header {
   background: var(--bg-card);
 }
 
+
+
 .stats-strip {
   background: var(--navy); color: #fff;
   padding: 3rem 2rem;
