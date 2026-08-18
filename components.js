@@ -185,4 +185,83 @@ document.addEventListener('DOMContentLoaded', function () {
     counters.forEach(c => cObs.observe(c));
   }
 
+  // Testimonials Gallery Autoscroll and Arrows
+  const testiScroll = document.getElementById('testi-scroll');
+  const prevBtn = document.getElementById('testi-prev');
+  const nextBtn = document.getElementById('testi-next');
+  if (testiScroll && prevBtn && nextBtn) {
+    const viewport = document.createElement('div');
+    viewport.style.overflow = 'hidden';
+    viewport.style.width = '100%';
+    viewport.style.flex = '1';
+    viewport.style.padding = '1rem 0 2rem';
+    testiScroll.parentNode.insertBefore(viewport, testiScroll);
+    viewport.appendChild(testiScroll);
+
+    testiScroll.style.overflowX = 'visible';
+    testiScroll.style.scrollSnapType = 'none';
+    testiScroll.style.padding = '0';
+
+    const scrollAmount = () => {
+      const card = testiScroll.querySelector('.testimonial-slide');
+      return card ? card.offsetWidth + parseFloat(getComputedStyle(testiScroll).gap || 0) : 300;
+    };
+
+    let isAnimating = false;
+
+    const moveNext = () => {
+      if (isAnimating) return;
+      isAnimating = true;
+      const amount = scrollAmount();
+      testiScroll.style.transition = 'transform 0.4s ease-in-out';
+      testiScroll.style.transform = `translateX(-${amount}px)`;
+      
+      setTimeout(() => {
+        testiScroll.style.transition = 'none';
+        testiScroll.style.transform = 'translateX(0)';
+        testiScroll.appendChild(testiScroll.firstElementChild);
+        isAnimating = false;
+      }, 400);
+    };
+
+    const movePrev = () => {
+      if (isAnimating) return;
+      isAnimating = true;
+      const amount = scrollAmount();
+      testiScroll.insertBefore(testiScroll.lastElementChild, testiScroll.firstElementChild);
+      testiScroll.style.transition = 'none';
+      testiScroll.style.transform = `translateX(-${amount}px)`;
+      
+      testiScroll.offsetHeight; 
+
+      testiScroll.style.transition = 'transform 0.4s ease-in-out';
+      testiScroll.style.transform = 'translateX(0)';
+      
+      setTimeout(() => {
+        testiScroll.style.transition = 'none';
+        isAnimating = false;
+      }, 400);
+    };
+
+    prevBtn.addEventListener('click', movePrev);
+    nextBtn.addEventListener('click', moveNext);
+
+    let autoScroll = setInterval(moveNext, 4000);
+
+    const container = document.querySelector('.testimonials-container');
+    container.addEventListener('mouseenter', () => clearInterval(autoScroll));
+    container.addEventListener('mouseleave', () => {
+      autoScroll = setInterval(moveNext, 4000);
+    });
+
+    let touchStartX = 0;
+    let touchEndX = 0;
+    viewport.addEventListener('touchstart', e => touchStartX = e.changedTouches[0].screenX, {passive: true});
+    viewport.addEventListener('touchend', e => {
+      touchEndX = e.changedTouches[0].screenX;
+      if (touchStartX - touchEndX > 50) moveNext();
+      if (touchEndX - touchStartX > 50) movePrev();
+    }, {passive: true});
+  }
+
 });

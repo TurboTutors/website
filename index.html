@@ -228,28 +228,45 @@
           <div class="section-label">What Students Say</div>
           <h2 class="section-title" id="testimonials-title">Real feedback from real students.</h2>
         </div>
-        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.25rem;">
-          <div class="card reveal">
-            <p style="font-size:0.9rem;color:var(--text-2);line-height:1.7;font-style:italic;margin-bottom:1.25rem;">"My
-              tutor was incredibly patient and explained the concept in a completely different way than my teacher had.
-              I finally understood how to approach the problem type on my own."</p>
-            <div style="font-size:0.78rem;font-weight:700;color:var(--text);">TurboTutors Student</div>
-            <div style="font-size:0.75rem;color:var(--text-muted);">10th Grade - Algebra II</div>
+        <div class="testimonials-container reveal">
+          <button class="scroll-btn prev" aria-label="Previous feedback" id="testi-prev">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+          </button>
+          <div class="testimonials-scroll" id="testi-scroll">
+            <div class="card testimonial-slide">
+              <p style="font-size:0.9rem;color:var(--text-2);line-height:1.7;font-style:italic;margin-bottom:1.25rem;">"Very good. Student asked questions and got answers right away. We were able to cover all the material efficiently."</p>
+              <div style="font-size:0.78rem;font-weight:700;color:var(--text);">Rahul S.</div>
+              <div style="font-size:0.75rem;color:var(--text-muted);">9th Grade - Math</div>
+            </div>
+            <div class="card testimonial-slide">
+              <p style="font-size:0.9rem;color:var(--text-2);line-height:1.7;font-style:italic;margin-bottom:1.25rem;">"Both times, instructors have been engaging, patient and attentive. They are awesome and my child feels much more confident."</p>
+              <div style="font-size:0.78rem;font-weight:700;color:var(--text);">Ananya G. - Parent</div>
+              <div style="font-size:0.75rem;color:var(--text-muted);">10th Grade - Biology</div>
+            </div>
+            <div class="card testimonial-slide">
+              <p style="font-size:0.9rem;color:var(--text-2);line-height:1.7;font-style:italic;margin-bottom:1.25rem;">"My teacher was very good. He talked at a very understandable pace and was easy to understand throughout the session."</p>
+              <div style="font-size:0.78rem;font-weight:700;color:var(--text);">Wei C.</div>
+              <div style="font-size:0.75rem;color:var(--text-muted);">11th Grade - Chemistry</div>
+            </div>
+            <div class="card testimonial-slide">
+              <p style="font-size:0.9rem;color:var(--text-2);line-height:1.7;font-style:italic;margin-bottom:1.25rem;">"The sessions are very engaging. I was struggling with Calculus, but my tutor broke down the derivatives perfectly. Highly recommend!"</p>
+              <div style="font-size:0.78rem;font-weight:700;color:var(--text);">Priya P.</div>
+              <div style="font-size:0.75rem;color:var(--text-muted);">12th Grade - Calculus</div>
+            </div>
+            <div class="card testimonial-slide">
+              <p style="font-size:0.9rem;color:var(--text-2);line-height:1.7;font-style:italic;margin-bottom:1.25rem;">"My tutor was incredibly patient and explained the concept in a completely different way than my teacher had. I finally understood how to approach the problem."</p>
+              <div style="font-size:0.78rem;font-weight:700;color:var(--text);">Sarah M.</div>
+              <div style="font-size:0.75rem;color:var(--text-muted);">10th Grade - Algebra II</div>
+            </div>
+            <div class="card testimonial-slide">
+              <p style="font-size:0.9rem;color:var(--text-2);line-height:1.7;font-style:italic;margin-bottom:1.25rem;">"I really appreciated that I could tell my tutor exactly what I was struggling with and we worked on exactly that the whole session. It wasn't generic."</p>
+              <div style="font-size:0.78rem;font-weight:700;color:var(--text);">Michael C.</div>
+              <div style="font-size:0.75rem;color:var(--text-muted);">11th Grade - Physics</div>
+            </div>
           </div>
-          <div class="card reveal reveal-delay-1">
-            <p style="font-size:0.9rem;color:var(--text-2);line-height:1.7;font-style:italic;margin-bottom:1.25rem;">"I
-              really appreciated that I could tell my tutor exactly what I was struggling with and we worked on exactly
-              that the whole session. It wasn't a generic lesson."</p>
-            <div style="font-size:0.78rem;font-weight:700;color:var(--text);">TurboTutors Student</div>
-            <div style="font-size:0.75rem;color:var(--text-muted);">11th Grade - Physics</div>
-          </div>
-          <div class="card reveal reveal-delay-2">
-            <p style="font-size:0.9rem;color:var(--text-2);line-height:1.7;font-style:italic;margin-bottom:1.25rem;">"My
-              daughter went from feeling overwhelmed before her exam to feeling confident after two sessions. The tutors
-              are knowledgeable, kind, and patient - and it's completely free."</p>
-            <div style="font-size:0.78rem;font-weight:700;color:var(--text);">Parent of a TurboTutors Student</div>
-            <div style="font-size:0.75rem;color:var(--text-muted);">9th Grade - Pre-Algebra</div>
-          </div>
+          <button class="scroll-btn next" aria-label="Next feedback" id="testi-next">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </button>
         </div>
       </div>
     </section>
