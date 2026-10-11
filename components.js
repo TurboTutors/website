@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   const NAV_LINKS = [
-    { href: 'get-tutoring.html', label: 'Get Tutoring' },
+    { href: 'index.html',        label: 'Home' },
     { href: 'subjects.html',     label: 'Subjects' },
     { href: 'impact.html',       label: 'Impact' },
     { href: 'team.html',         label: 'Our Team' },
@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function () {
         ${navLinksHTML}
       </nav>
       <div class="nav-actions">
-        <a href="get-tutoring.html" class="btn-nav" id="nav-book-btn">Book a Free Session</a>
+        <a href="get-tutoring.html" class="btn-nav" id="nav-book-btn">Get Free Tutoring</a>
         <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
           <span></span><span></span><span></span>
         </button>

@@ -62,7 +62,7 @@
         <div class="section-header reveal">
           <div class="section-label">Core Metrics</div>
           <h2 class="section-title" id="metrics-title">The Numbers</h2>
-          <p class="section-sub">Impact data as of August 2026. Methodology definitions are listed below.</p>
+          <p class="section-sub">Impact data as of October 2026. Methodology definitions are listed below.</p>
         </div>
 
         <div
@@ -89,7 +89,7 @@
           </div>
           <div class="card" style="text-align:center;">
             <div style="font-family:var(--font-head);font-size:3rem;font-weight:900;color:var(--navy);line-height:1;"
-              data-target="20" data-suffix="+">20+</div>
+              data-target="7">7</div>
             <div style="font-size:0.85rem;color:var(--text-muted);margin-top:0.4rem;">Countries Reached</div>
           </div>
         </div>
@@ -99,15 +99,15 @@
           <div>
             <h3 style="font-family:var(--font-head);font-size:1rem;font-weight:700;margin-bottom:0.25rem;">Subject
               Distribution</h3>
-            <p style="font-size:0.75rem;color:var(--text-muted);margin-bottom:1.5rem;">As of August 2026</p>
+            <p style="font-size:0.75rem;color:var(--text-muted);margin-bottom:1.5rem;">As of October 2026</p>
 
             <div class="bar-row">
               <div class="bar-label-row">
                 <span class="bar-label">Mathematics</span>
-                <span class="bar-val">38%</span>
+                <span class="bar-val">42%</span>
               </div>
               <div class="bar-bg">
-                <div class="bar-fill" style="width:38%"></div>
+                <div class="bar-fill" style="width:42%"></div>
               </div>
             </div>
             <div class="bar-row">
@@ -125,16 +125,7 @@
                 <span class="bar-val">18%</span>
               </div>
               <div class="bar-bg">
-                <div class="bar-fill gold" style="width:18%"></div>
-              </div>
-            </div>
-            <div class="bar-row">
-              <div class="bar-label-row">
-                <span class="bar-label">English</span>
-                <span class="bar-val">10%</span>
-              </div>
-              <div class="bar-bg">
-                <div class="bar-fill muted" style="width:10%"></div>
+                <div class="bar-fill light" style="width:18%"></div>
               </div>
             </div>
             <div class="bar-row">
@@ -146,40 +137,49 @@
                 <div class="bar-fill muted" style="width:9%"></div>
               </div>
             </div>
-          </div>
-
-          <div>
-            <h3 style="font-family:var(--font-head);font-size:1rem;font-weight:700;margin-bottom:0.5rem;">Impact Since
-              Founding</h3>
-            <p style="color:var(--text-muted);font-size:0.8rem;margin-bottom:1.5rem;">January 2024 - Present</p>
-            <div class="timeline">
-              <div class="timeline-item">
-                <div class="timeline-date">January 2024</div>
-                <h4>TurboTutors Founded</h4>
-                <p>Five high-school students in New Jersey co-found TurboTutors and begin developing tutoring
-                  curriculum.</p>
+            <div class="bar-row">
+              <div class="bar-label-row">
+                <span class="bar-label">English</span>
+                <span class="bar-val">6%</span>
               </div>
-              <div class="timeline-item">
-                <div class="timeline-date">2024</div>
-                <h4>First Students Served</h4>
-                <p>TurboTutors begins holding virtual sessions, reaching its first cohort of students across
-                  mathematics, physics, and computer science.</p>
-              </div>
-              <div class="timeline-item">
-                <div class="timeline-date">2024-2025</div>
-                <h4>Fiscal Sponsorship</h4>
-                <p>TurboTutors enters a fiscal sponsorship arrangement with IFERS, a 501(c)(3) nonprofit, supporting the
-                  organization's educational mission.</p>
-              </div>
-              <div class="timeline-item">
-                <div class="timeline-date">August 2026</div>
-                <h4>100+ Students Supported</h4>
-                <p>TurboTutors surpasses 100 unique students served across all subjects with 500+ hours of free virtual
-                  tutoring completed.</p>
+              <div class="bar-bg">
+                <div class="bar-fill muted" style="width:6%"></div>
               </div>
             </div>
           </div>
 
+          <div>
+            <h3 style="font-family:var(--font-head);font-size:1rem;font-weight:700;margin-bottom:0.25rem;"
+              id="methodology-title">How We Define Our Metrics</h3>
+            <p style="font-size:0.75rem;color:var(--text-muted);margin-bottom:1.5rem;">We define each metric clearly so
+              the numbers are honest and comparable over time.</p>
+
+            <ul class="method-list">
+              <li>
+                <div class="method-dot"></div>
+                <p><strong>Students Supported:</strong> unique students who completed at least one session. Each
+                  student is counted once, no matter how many sessions they attend.</p>
+              </li>
+              <li>
+                <div class="method-dot"></div>
+                <p><strong>Hours &amp; Sessions:</strong> only appointments that took place as scheduled, with one
+                  60-minute session counting as one hour. No-shows and cancellations are excluded.</p>
+              </li>
+              <li>
+                <div class="method-dot"></div>
+                <p><strong>Data Source:</strong> records from TurboTutors' scheduling system, reviewed and updated
+                  periodically by organization leadership.</p>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="fiscal-notice" style="margin-top:2.5rem;" role="note">
+          <p>
+            <strong>Data Note:</strong> Impact figures are self-reported based on TurboTutors' internal session records.
+            Data is updated as new sessions are completed and reviewed by leadership. Last updated October 2026.
+          </p>
         </div>
       </div>
     </section>
@@ -197,61 +197,6 @@
           style="max-width:900px; margin:0 auto; border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; background: var(--surface);">
           <div id="impact-map" style="width: 100%; height: 500px;"></div>
         </div>
-      </div>
-    </section>
-
-    <section class="section"
-      style="background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border);"
-      aria-labelledby="methodology-title">
-      <div class="container">
-        <div class="section-header reveal">
-          <div class="section-label">Definitions</div>
-          <h2 class="section-title" id="methodology-title">How We Define Our Metrics</h2>
-          <p class="section-sub">We define each metric clearly so the numbers are honest and comparable over time.</p>
-        </div>
-
-        <div style="max-width:720px;">
-          <div class="method-row reveal">
-            <div class="method-dot"></div>
-            <div>
-              <h4>Students Supported</h4>
-              <p>Unique individual students who have participated in at least one completed TurboTutors session. If a
-                student books and attends multiple sessions, they are counted once.</p>
-            </div>
-          </div>
-          <div class="method-row reveal">
-            <div class="method-dot"></div>
-            <div>
-              <h4>Tutoring Hours</h4>
-              <p>Total tutor time delivered in completed sessions. One 60-minute appointment counts as one hour. Does
-                not include scheduling time or email communication.</p>
-            </div>
-          </div>
-          <div class="method-row reveal">
-            <div class="method-dot"></div>
-            <div>
-              <h4>Sessions Completed</h4>
-              <p>Total booked appointments that took place as scheduled. No-shows, student cancellations, and tutor
-                cancellations are excluded from this count.</p>
-            </div>
-          </div>
-          <div class="method-row reveal">
-            <div class="method-dot"></div>
-            <div>
-              <h4>Data Source</h4>
-              <p>Session records are maintained through TurboTutors' scheduling system. All impact data is reviewed and
-                updated periodically by organization leadership.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="fiscal-notice" style="max-width:720px;margin-top:2.5rem;" role="note">
-          <p>
-            <strong>Data Note:</strong> Impact figures are self-reported based on TurboTutors' internal session records.
-            Data is updated as new sessions are completed and reviewed by leadership. Last updated August 2026.
-          </p>
-        </div>
-
       </div>
     </section>
 
@@ -275,6 +220,7 @@
   <script src="https://cdn.jsdelivr.net/npm/jsvectormap/dist/maps/world.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", () => {
+      const reachedCountries = ['US', 'MX', 'CA', 'GB', 'IN', 'ET', 'PK'];
       if (document.getElementById('impact-map')) {
         const map = new jsVectorMap({
           selector: '#impact-map',
@@ -297,9 +243,8 @@
               fill: '#286583'
             }
           },
-          selectedRegions: ['US', 'CA', 'GB', 'IN', 'AU', 'DE', 'FR', 'AE', 'SG', 'JP', 'ET', 'MX', 'NG', 'PK', 'CN', 'ID', 'VN', 'BR', 'TR', 'BD', 'EG', 'DZ'],
+          selectedRegions: reachedCountries,
           onRegionTooltipShow(event, tooltip, code) {
-            const reachedCountries = ['US', 'CA', 'GB', 'IN', 'AU', 'DE', 'FR', 'AE', 'SG', 'JP', 'ET', 'MX', 'NG', 'PK', 'CN', 'ID', 'VN', 'BR', 'TR', 'BD', 'EG', 'DZ'];
             if (!reachedCountries.includes(code)) {
               event.preventDefault();
             } else {

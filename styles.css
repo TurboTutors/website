@@ -61,7 +61,7 @@ ul { list-style: none; }
   text-align: center; padding: 0.6rem 2rem;
   font-size: 0.82rem; font-weight: 600;
   display: flex; align-items: center; justify-content: center; gap: 1rem;
-  position: relative; z-index: 200;
+  position: relative; z-index: 1;
 }
 .announce-banner a {
   color: #0A0A0A; text-decoration: underline; text-underline-offset: 2px;
@@ -273,18 +273,6 @@ header {
 }
 .card p { font-size: 0.875rem; color: var(--text-2); line-height: 1.55; }
 
-.card-num-header {
-  font-family: var(--font-body);
-  font-size: 0.68rem; font-weight: 700; letter-spacing: 0.15em;
-  color: var(--accent-dark); margin-bottom: 1.25rem;
-  text-transform: uppercase;
-  display: flex; align-items: center; gap: 8px;
-}
-.card-num-header::after {
-  content: '';
-  flex-grow: 1; height: 1px; background: var(--border);
-}
-
 .card-img-top {
   width: 100%; height: 160px; object-fit: cover;
   border-radius: var(--radius-sm) var(--radius-sm) 0 0;
@@ -495,18 +483,14 @@ header {
 }
 .fiscal-notice strong { color: var(--text); }
 
-.method-row {
-  background: var(--bg-card); border: 1px solid var(--border);
-  border-radius: var(--radius-md); padding: 1.5rem;
-  margin-bottom: 0.75rem;
-  display: flex; gap: 1.25rem; align-items: flex-start;
-}
+.method-list { display: flex; flex-direction: column; gap: 1.25rem; }
+.method-list li { display: flex; gap: 0.875rem; align-items: flex-start; }
 .method-dot {
   width: 8px; height: 8px; border-radius: 50%;
-  background: var(--navy); flex-shrink: 0; margin-top: 0.45rem;
+  background: var(--navy); flex-shrink: 0; margin-top: 0.5rem;
 }
-.method-row h4 { font-family: var(--font-head); font-size: 0.95rem; font-weight: 700; margin-bottom: 0.25rem; }
-.method-row p { font-size: 0.85rem; color: var(--text-2); line-height: 1.55; }
+.method-list p { font-size: 0.875rem; color: var(--text-2); line-height: 1.6; }
+.method-list strong { font-family: var(--font-head); color: var(--text); }
 
 .bar-row { margin-bottom: 1.25rem; }
 .bar-label-row { display: flex; justify-content: space-between; margin-bottom: 0.4rem; }
@@ -514,7 +498,7 @@ header {
 .bar-val { font-size: 0.875rem; color: var(--text-muted); }
 .bar-bg { height: 8px; background: var(--surface); border-radius: 10px; overflow: hidden; }
 .bar-fill { height: 100%; border-radius: 10px; background: var(--navy); }
-.bar-fill.gold { background: var(--accent-dark); }
+.bar-fill.light { background: #5B92B5; }
 .bar-fill.blue { background: var(--blue); }
 .bar-fill.muted { background: var(--text-muted); }
 
